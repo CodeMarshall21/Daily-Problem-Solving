@@ -1,4 +1,5 @@
-# Given a string (with only uppercase letters and numbers), return the total distance traveled by the robot. The robot can move only left, right, top, and bottom. It can't move diagonally.
+# Given a string (with only uppercase letters and numbers), return the total distance traveled by the robot. 
+# The robot can move only left, right, top, and bottom. It can't move diagonally.
 # 1 2 3 4 5 6 7 8 9 0
 # Q W E R T Y U I O P
 # A S D F G * H J K L 
@@ -28,6 +29,8 @@ def getDistance(word):
     for i in word:        
         curr_pos = qwert_pos[i]
         dis = abs(curr_pos[0] - prev_word[0]) + abs(curr_pos[1] - prev_word[1])
+        if ((curr_pos[1] == 0 or prev_word[1] == 0) and ((curr_pos[0]<0 and prev_word[0]>0) or (curr_pos[0]>0 and prev_word[0]<0))):
+            dis -= 1
         tot_dis += dis
         prev_word = curr_pos
     return tot_dis    
