@@ -1,4 +1,9 @@
-#Linear Time Complexity -> O(n)
+'''
+Linear Time Complexity -> O(n)
+
+Explanation: https://youtu.be/cWz4_zUegxE?si=rssboCGgIjzvXb__&t=182
+ 
+'''
 
 class Solution:
     def minimumRecolors(self, blocks: str, k: int) -> int:
