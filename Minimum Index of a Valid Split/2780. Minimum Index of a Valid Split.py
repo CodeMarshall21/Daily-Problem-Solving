@@ -21,9 +21,9 @@ class Solution:
                 leftCount += 1
                 rightCount -= 1
                 
-            leftLength = i + 1
-            rightLength = len(nums) - leftLength
-            
-            if leftCount > (leftLength//2) and rightCount >  (rightLength//2) :
-                return i
+                leftLength = i + 1
+                rightLength = len(nums) - leftLength
+                
+                if leftCount > (leftLength//2) and rightCount >  (rightLength//2) :
+                    return i
         return -1
