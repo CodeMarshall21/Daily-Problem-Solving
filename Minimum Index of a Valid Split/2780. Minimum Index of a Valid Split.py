@@ -1,3 +1,7 @@
+'''
+Explanation -> https://www.youtube.com/watch?v=XemmMMz_0mU
+'''
+
 class Solution:
     def minimumIndex(self, nums: List[int]) -> int:
         majorityElement = 0
