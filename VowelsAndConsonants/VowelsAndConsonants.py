@@ -14,10 +14,8 @@ def ConsequtiveCandV(str):
         j += 1
     if (str[i] in vowels):
             newStr += 'V'
-            i = j
     elif (str[i] in consonants):
             newStr += 'C'
-            i = j
     return newStr
 
 str = "mississippi"
